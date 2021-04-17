@@ -9,7 +9,9 @@
 
 import random
 
-def drawBoard(board):
+BOARD_SPACE = 10
+
+def draw_board(board):
     """ This function prints out the board that it was passed.
 
      "board" is a list of 10 strings representing the board (ignore index 0) """
@@ -134,7 +136,7 @@ def get_computer_move(board, computer_letter):
     if is_space_free(board, 5):
         return 5
 
-    ""' Move on one of the sides."""
+    """ Move on one of the sides.""" 
     return choose_random_move_from_list(board, [2, 4, 6, 8])
 
 def is_board_full(board):
